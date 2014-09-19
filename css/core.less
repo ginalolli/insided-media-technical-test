@@ -1,0 +1,442 @@
+ // Core variables and mixins
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+// Colours
+// Primary Colours
+@insided-primary-white:							#FFFFFF;   
+@insided-primary-black:							#000000;
+@insided-primary-red:							#CB5841; 
+@insided-primary-green:							#78A81E; 
+@insided-primary-blue:							#1697c5;
+
+@insided-primary-lightgrey:						#F8F8F8; 
+@insided-primary-midgrey:						#C5C5C5; 
+@insided-primary-darkgrey:						#111111; 
+@shadow:										#EDEDED;
+
+
+//Secondary Colours
+@insided-secondary-lightgreen: #9fcc41;
+@insided-secondary-darkgreen:  #95c72e;
+
+@insided-secondary-lightblue: #28bdf5;
+@insided-secondary-darkblue:  #13b6f4;
+
+
+@insided-secondary-lightred: #e07561;
+@insided-secondary-darkred: #dd6852;
+
+
+
+      
+// Font Families.   
+@icon-font-path:							"../fonts/";	
+@hlc-font-fa:								FontAwesome;
+
+
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+
+@input-height-base:       (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-large:      (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+@input-height-small:      (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+//Font sizes
+@font-size-base:		  12px;
+@font-size-label:   	  ceil(@font-size-base * 0.90); // ~13px
+
+
+
+//Font Sizes for headings
+@insided-fontsize-h5:		ceil(@font-size-base * 0.85); // ~12px
+
+
+
+
+// Paddings:
+@padding-small: 10px;
+@padding-large: 20px;
+
+
+
+
+
+
+
+
+
+@line-height-large:              1.33;
+@line-height-small:              1.5;
+
+@border-radius-base:             4px;
+@border-radius-large:            6px;
+@border-radius-small:            3px;
+
+@caret-width-base:               4px;
+@caret-width-large:              5px;
+
+// Extra small screen / phone
+@screen-xs:                  480px;
+@screen-phone:               @screen-xs;
+
+// Small screen / tablet
+@screen-sm:                  768px;
+@screen-tablet:              @screen-sm;
+@screen-tablet-landscape:	1024px;
+
+// Medium screen / desktop
+@screen-md:                  940px;
+@screen-desktop:             @screen-md;
+
+// Large screen / wide desktop
+@screen-lg:                  1200px;
+@screen-lg-desktop:          @screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm - 1);
+@screen-sm-max:              (@screen-md - 1);
+@screen-md-max:              (@screen-lg - 1);
+
+
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+@grid-columns:              12;
+// Padding, to be divided by two and applied to the left and right of all columns
+@grid-gutter-width:         20px;
+
+// Point at which the navbar stops collapsing
+@grid-float-breakpoint:     @screen-tablet;
+
+// Paths
+@hlc-image-path:							"../images/";
+
+
+ 
+// Reset   
+@import "bootstrap/normalize.less";
+@import "bootstrap/print.less";
+
+// Core CSS
+@import "bootstrap/grid.less";
+
+
+// Components
+@import "bootstrap/forms.less";
+@import "bootstrap/buttons.less";
+@import "bootstrap/dropdowns.less";
+@import "bootstrap/pagination.less";
+
+// Utility classes
+@import "bootstrap/utilities.less";
+@import "bootstrap/responsive-utilities.less";
+
+
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: @font-size-base; //12px
+}
+
+//Headings
+h5 {
+	color: @insided-primary-darkgrey;
+	font-weight: bold; 
+	margin-top: 0;
+}
+
+label {display: block;}
+a.clear,
+a.cancel {
+	color: @insided-primary-red;
+
+}
+
+.clear {
+	display: none;
+}
+.btn, 
+select.form-control,
+input {
+	box-shadow: 0 2px 2px @shadow;
+}
+
+label {
+	font-weight: normal;
+	color: @insided-primary-darkgrey;
+}
+.container:first-child {
+	margin-bottom: 50px;
+}
+//Jumbotron
+.container .jumbotron {
+	font-size: @font-size-base;
+	max-width: @screen-md;
+	margin: 20px auto 0 auto;
+	padding: 0;
+	border-radius: 0;
+	background-color: @insided-primary-lightgrey;
+	border-color: @insided-primary-midgrey;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	.inner-container {
+		border-bottom: 1px solid @insided-primary-midgrey;
+		padding: @padding-large;
+	}
+	.columns input {
+		margin-top: 0;
+	}
+}
+
+.container .tags,
+.container .extra {
+	max-width: @screen-md;
+	margin: 0 auto;
+	.cols {
+		padding: @padding-small 0;
+	}
+
+}
+
+
+
+
+//Table
+
+.container .table {
+	max-width: @screen-md;
+	margin: 0 auto;
+	thead {
+		background-color:  @insided-primary-lightgrey; 
+		tr td {
+			border: 0;
+			line-height: 3em;
+			font-weight: bold;
+		}
+	}
+	tbody {
+		tr td {
+			line-height: 3em;
+			&:first-child {
+				font-weight: bold;
+			}
+		}
+	}
+}
+.table-responsive {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+table tbody tr:nth-child(even)  {
+	background-color: @insided-primary-lightgrey;
+
+}
+
+.container .table thead .selected {
+	color: @insided-primary-darkgrey;
+}
+//Change styles when checkbox is clicked
+.container .table .selected {
+	background-color: @insided-secondary-lightblue;
+	color: @insided-primary-white;
+	a {
+		color: @insided-primary-white;
+	}
+	input {
+		box-shadow: none;
+	}
+}
+
+
+.extra {
+	background-color: @insided-primary-lightgrey;
+	border-color: @insided-primary-midgrey;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	.extra-info {
+		border-top: none;
+		background-color: @insided-primary-lightgrey;
+		padding: @padding-small @padding-small (@padding-small/2) @padding-small;
+		.form-group {
+			margin-bottom: 0;
+		}
+	}
+	
+}
+
+
+
+
+
+.extra-info table.hide {
+	display: none;
+}
+
+.export {
+	padding: @padding-small;
+	background-color: @insided-primary-lightgrey;
+	a, button {
+		display: inline-block;
+		width:48%;
+	}
+}
+.hide-tag {
+	display: none;
+}
+/*.comments-r {
+	display: block;
+}*/
+
+//Form elements
+select.form-control {
+	color: @insided-primary-darkgrey;
+	.border-top-radius(1px);
+	.border-bottom-radius(1px);
+	#gradient.vertical(@insided-primary-white; @insided-primary-lightgrey;0%;60%);
+}
+
+//Datepicker styles
+.datepicker-days {
+	padding: @padding-large;
+	table {
+		border: 1px solid @insided-primary-midgrey;
+		tr {
+			border-bottom: 1px solid @insided-primary-midgrey;
+		}
+		td {
+			border-right: 1px solid @insided-primary-midgrey;
+		}
+	}
+}
+
+.datepicker thead tr:first-child {
+	#gradient.vertical(@insided-primary-white; @insided-primary-lightgrey;0%;60%);
+}
+input.datepicker {
+	color: @insided-primary-darkgrey;  
+	.border-top-radius(2px);
+	.border-bottom-radius(2px);
+	#gradient.vertical(@insided-primary-white; @insided-primary-lightgrey;0%;60%);
+	display: block;
+	width: 100%;
+	height: 31px;
+	padding: 6px 12px;
+	font-size: 12px;
+	line-height: 1.42857143;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	&.dropdown-menu {
+		padding: 0;
+	}
+}
+
+div.datepicker.dropdown-menu {
+	padding: 0;
+}
+
+//Select dropdowns
+.dropdown-menu {
+/*	width: 100%;*/
+	padding: @padding-small;
+	li a {
+		width: 45%;
+		display: inline-block;
+		color: @insided-secondary-lightblue;
+		padding: 3px 0;
+		&:hover {
+			background-color: @insided-primary-white;
+			curser: pointer;
+			color: @insided-secondary-lightblue;
+			text-decoration: underline;
+		}
+	}
+	.checkbox input[type="checkbox"] {
+		margin-left: -17px;
+	}
+	.checkbox:hover {
+		background-color: @insided-secondary-lightblue;
+		label {
+			color: @insided-primary-white!important;
+		}
+		input {
+			box-shadow: none;
+		}
+	}
+}
+
+.dropdown-menu .checkall,
+.dropdown-menu .uncheckall {
+	cursor: pointer;
+}
+
+
+//Buttons
+.btn-add {
+	border: 1px solid @insided-primary-green;
+	#gradient.vertical(@insided-secondary-lightgreen; @insided-secondary-darkgreen;0%;20%);
+	 	&:hover,
+		&:focus,  
+		&:active {
+		 	background-color: @insided-secondary-lightgreen; //to override the default green bkg colour visible in IE
+	}
+}
+.btn-update {
+	margin-right: 10px;
+	border: 1px solid @insided-primary-blue;
+	#gradient.vertical(@insided-secondary-lightblue; @insided-secondary-darkblue;0%;20%);
+		&:hover,
+		&:focus,  
+		&:active {
+		 	background-color: @insided-secondary-lightblue; //to override the default blue bkg colour visible in IE
+
+	}
+
+}
+.btn-danger {
+	color: @insided-primary-red;
+	text-shadow: 0 0 1px @insided-primary-white;
+	#gradient.vertical(@insided-secondary-lightred; @insided-secondary-darkred;0%;80%);
+
+}
+
+.btn-tag {
+	border: 1px solid @insided-primary-midgrey;
+	#gradient.vertical(@insided-primary-white; @insided-primary-lightgrey;0%;60%);
+		&:hover,
+		&:focus,  
+		&:active {
+		 	background-color: @insided-primary-white; //to override the default blue bkg colour visible in IE
+
+	}
+}
+.btn-group.options {
+	width: 100%;
+}
+
+
+.open {
+	width: 100%;
+}
+
+
+/******************************************/
+/*           MEDIA QUERIES                */
+/******************************************/
+
+//Mobile Only
+@media (max-width: @screen-xs) {
+	.btn-add {
+		margin-top: 10px;
+	}
+	.open-first {
+		margin-bottom: 10px;
+	}
+}
+

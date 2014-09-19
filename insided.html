@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head id="head"><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+   InSided Media Technical Test by Gina Lolli
+ </title>
+ <script src="js/jquery-2.1.1.js"></script>
+ <script src="js/bootstrap.min.js" type="text/javascript"></script>
+ <script type="text/javascript" src="js/modernizr-2.7.1.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+ <script type="text/javascript" src="js/scripts.js"></script>
+ <link rel="stylesheet" href="css/html5-doctor-reset.min.css">
+ <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+ <link rel="stylesheet" href="css/datepicker.css">
+ <link rel="stylesheet" href="css/core.less.css">
+</head>
+<body>
+  <div class="bootstrap_container">
+   <div class="container">
+     <div class="jumbotron">
+      <div class="inner-container">
+
+       <div class="row">
+
+        <div class="col-xs-12">
+          <h5>Advanced search</h5>
+        </div> <!--/.col-xs-12--> 
+
+        <div class="col-xs-6 col-sm-3  col-lg-3">
+         <form role="form" class="comments">
+           <fieldset>
+             <div class="form-group">
+              <select class="form-control">
+                <option>Comments</option>
+                <option class="activate">Comments 1</option>
+                <option class="activate">Comments 2</option>
+                <option class="activate">Comments 3</option>
+              </select>
+            </div> <!--/.form-group-->
+          </fieldset>
+        </form>
+      </div> <!--/.col-xs-6--> 
+
+      <div class="col-xs-6 col-sm-3 col-lg-3">
+       <form role="form">
+         <fieldset id="depend" disabled="true">
+           <div class="form-group">
+            <select class="form-control">
+              <option>is greater than</option>
+              <option>greater than 4</option>
+              <option>greater than 5</option>
+              <option>greater than 6</option>
+            </select>
+          </div> <!--/.form-group-->
+        </fieldset>
+      </form>
+    </div> <!--/.col-xs-6-->
+
+  </div> <!--/.row-->
+
+  <div class="row sec-row">
+
+   <div class="col-xs-6 col-sm-3  col-lg-3">
+     <form role="form">
+       <fieldset class="reg-date">
+         <div class="form-group">
+          <select class="form-control">
+            <option class="no-activate-2">Registration date</option>
+            <option class="activate-2" value="option">Registration date option 1</option>
+            <option class="activate-2" value="option">Registration date option 2</option>
+          </select>
+        </div> <!--/.form-group-->
+      </fieldset>
+    </form>
+  </div> <!--/.col-xs-6--> 
+
+  <div class="col-xs-6  col-sm-3 col-lg-3">
+   <form role="form" id="show-1" class="hide">
+     <fieldset>
+       <div class="form-group">
+        <select class="form-control">
+          <option class="show-cross-1">before</option>
+          <option class="show-cross-1">after</option>
+          <option class="show-cross-1">on</option>
+        </select>
+      </div> <!--/.form-group-->
+    </fieldset>
+  </form>
+</div> <!--/.col-xs-6-->
+
+<div class="col-xs-10 col-sm-3">
+ <div id="show-2" class="form-group hide">
+  <input type="text" class="span2 datepicker" value="02-16-2012" id="dp1">
+</div>
+</div> <!--/.col-xs-10-->
+
+<div class="col-xs-1">
+ <button type="button" id="show-3" class="btn btn-danger btn-sm hidden-cross-1 hide">X</button>
+</div>
+
+</div> <!--/.row-->
+
+<div class="row third-row"> 
+
+ <div class="col-xs-10 col-sm-3 col-lg-3">
+   <form role="form">
+     <fieldset class="usergroup-1 usergroup">
+       <div class="form-group">
+        <select class="form-control">
+          <option class="activate">Usergroup</option>
+          <option class="activate-3" value="usergroup">Moderator</option>
+          <option class="activate-3" value="usergroup">Registered user</option>
+          <option class="activate-3" value="usergroup">Super user</option>
+        </select>
+      </div> <!--/.form-group-->
+    </fieldset>
+  </form>
+</div> <!--/.col-xs-4--> 
+
+<div class="col-xs-10 col-sm-3 col-lg-3">
+  <div class="btn-group options hide" id="checkboxes-div-1">
+   <button class="btn btn-default dropdown-toggle open-first open" type="button" data-toggle="dropdown" ><!--DISABLE THIS-->
+     Select one or more options <span class="caret"></span>
+   </button>
+   <ul class="dropdown-menu check-first"  role="menu">
+     <li class="option">
+       <a class="checkall show-cross-2" href="#">Check all</a>
+       <a class="uncheckall">Uncheck all</a>
+     </li>
+     <li><strong>Group 1</strong></li>
+     <li class="option">
+       <div class="checkbox">
+        <label>
+         <input type="checkbox" class="show-cross-2">Option #1 for group 1
+       </label>
+     </div>
+   </li>
+   <li class="option">
+     <div class="checkbox">
+      <label>
+       <input type="checkbox" class="show-cross-2">Option #2 for group 1
+     </label>
+   </div>
+ </li>
+ <li class="option">
+   <div class="checkbox">
+    <label>
+     <input type="checkbox" class="show-cross-2">Option #3 for group 1
+   </label>
+ </div>
+</li>
+<li><strong>Group 2</strong></li>
+<li class="option">
+ <div class="checkbox">
+  <label>
+   <input type="checkbox" class="show-cross-2">Forum
+ </label>
+</div>
+</li>
+<li class="option">
+ <div class="checkbox">
+  <label>
+   <input type="checkbox" class="show-cross-2">Ipsum
+ </label>
+</div>
+</li>
+<li class="option">
+ <div class="checkbox">
+  <label>
+   <input type="checkbox" class="show-cross-2">Dorol
+ </label>
+</div>
+</li>
+</ul>
+</div> <!--/.btn-group-->
+</div> <!--/.col-xs-6-->
+
+<div class="col-xs-1">
+ <button type="button" class="btn btn-danger btn-sm hidden-cross-2 hide">X</button>
+</div>
+
+</div> <!--/.third-row-->
+
+<div class="row fourth-row hide"> <!--HIDE THIS-->
+
+ <div class="col-xs-10 col-sm-3 col-lg-3">
+   <form role="form">
+     <fieldset class="usergroup-2 usergroup">
+       <div class="form-group">
+        <select class="form-control">
+          <option class="activate" value="">Usergroup</option>
+          <option class="activate-3" value="usergroup">Moderator</option>
+          <option class="activate-3" value="usergroup">Registered user</option>
+          <option class="activate-3" value="usergroup">Super user</option>
+        </select>
+      </div> <!--/.form-group-->
+    </fieldset>
+  </form>
+</div> <!--/.col-xs-4--> 
+
+<div class="col-xs-10 col-sm-3 col-lg-3">
+  <div class="btn-group options hide" id="checkboxes-div-2">
+   <button class="btn btn-default dropdown-toggle open-second open" type="button" data-toggle="dropdown" ><!--DISABLE THIS-->
+     Select one or more options <span class="caret"></span>
+   </button>
+   <ul class="dropdown-menu check-second"  role="menu">
+     <li class="option">
+       <a class="checkall show-cross-2" href="#">Check all</a>
+       <a class="uncheckall">Uncheck all</a>
+     </li>
+     <li><strong>Group 1</strong></li>
+     <li class="option">
+       <div class="checkbox">
+        <label>
+         <input type="checkbox" class="show-cross-2">Option #1 for group 1
+       </label>
+     </div>
+   </li>
+   <li class="option">
+     <div class="checkbox">
+      <label>
+       <input type="checkbox" class="show-cross-2">Option #2 for group 1
+     </label>
+   </div>
+ </li>
+ <li class="option">
+   <div class="checkbox">
+    <label>
+     <input type="checkbox" class="show-cross-2">Option #3 for group 1
+   </label>
+ </div>
+</li>
+<li><strong>Group 2</strong></li>
+<li class="option">
+ <div class="checkbox">
+  <label>
+   <input type="checkbox" class="show-cross-2">Forum
+ </label>
+</div>
+</li>
+<li class="option">
+ <div class="checkbox">
+  <label>
+   <input type="checkbox" class="show-cross-2">Ipsum
+ </label>
+</div>
+</li>
+<li class="option">
+ <div class="checkbox">
+  <label>
+   <input type="checkbox" class="show-cross-2">Dorol
+ </label>
+</div>
+</li>
+</ul>
+</div> <!--/.btn-group-->
+</div> <!--/.col-xs-6-->
+
+<div class="col-xs-1">
+ <button type="button" class="btn btn-danger btn-sm hidden-cross-3 hide">X</button>
+</div>
+
+</div> <!--/.fourth-row-->
+
+
+
+
+<div class="row">
+
+  <!--ADD ROW BUTTON-->
+  <div class="col-xs-2">
+   <input class="btn btn-success btn-add" type="button" value="Add row">
+ </div>
+</div> <!--/.row-->
+</div><!--/.inner-container-->
+<div class="inner-container columns">
+  <div class="row">
+   <div class="col-xs-12">
+    <h5>Columns</h5>
+  </div> <!--/.col-xs-12--> 
+</div>
+
+<div class="row">
+
+ <div class="col-xs-12 col-sm-2">
+   <label class="font-normal">
+     <input type="checkbox" class="category-tag checks usertitle"> Usertitle
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="category-tag checks comments"> Comments
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="category-tag checks deleted-comments"> Deleted comments
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="category-tag checks deleted-topics"> Deleted topics
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="category-tag checks questions"> Questions solved
+   </label>
+ </div> <!--/.col-xs-2--> 
+
+ <div class="col-xs-12 col-sm-2">
+   <label class="font-normal">
+     <input type="checkbox" class="tags-tag checks topics"> Topics
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="tags-tag checks usergroup"> Usergroup
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="tags-tag checks secondary"> Secondary usergroup
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="tags-tag checks registration-date"> Registration date
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="tags-tag checks last-login"> Last login
+   </label>
+ </div> <!--/.col-xs-2--> 
+
+ <div class="col-xs-12 col-sm-2">
+   <label class="font-normal">
+     <input type="checkbox" class="views-tag checks logins"> Logins
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="views-tag checks last-comment"> Last comment
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="views-tag checks email"> Email
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="views-tag checks sso"> SSO-ID
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="views-tag checks ip"> IP-adress
+   </label>
+ </div> <!--/.col-xs-2--> 
+
+ <div class="col-xs-12 col-sm-2">
+   <label class="font-normal">
+     <input type="checkbox" class="lorem-tag checks gender"> Gender
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="lorem-tag checks date-of-birth"> Date of birth
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="lorem-tag checks location"> Location
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="lorem-tag checks interest"> Interest
+   </label>
+ </div> <!--/.col-xs-2--> 
+
+ <div class="col-xs-12 col-sm-2">
+   <label class="font-normal">
+     <input type="checkbox" class="ipsum-tag checks profession"> Profession
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="ipsum-tag checks signature"> Signature
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="ipsum-tag checks notes"> Notes
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="ipsum-tag checks badges"> Badges
+   </label>
+ </div> <!--/.col-xs-2--> 
+
+ <div class="col-xs-12 col-sm-2">
+   <label class="font-normal">
+     <input type="checkbox" class="dolor-tag checks rep-received"> Reputation received
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="dolor-tag checks rep-given"> Reputation given
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="dolor-tag checks followers"> Followers
+   </label>
+   <label class="font-normal">
+     <input type="checkbox" class="dolor-tag checks following"> Following
+   </label>
+ </div> <!--/.col-xs-2--> 
+
+</div> <!--/.row-->
+</div><!--/.inner-container-->
+<div class="inner-container">
+
+  <div class="row">
+   <div class="col-xs-12 col-mg-bt-1">
+    <!--UPDATE BUTTON-->
+    <a href="#" class="btn btn-info btn-mg-1 btn-update" role="button">Update</a>
+    <a href="index.html" class="cancel">Cancel</a>
+  </div> <!--/.col-xs-12-->
+</div> <!--/.row-->
+</div><!--/.inner-container-->
+
+</div> <!--/.jumbotron-->
+<div class="container">
+  <div class="row mg-bt-30 tags">
+    <div class="col-xs-12 col-sm-5 cols">
+      <button type="button" class="btn btn-default usertitle-tag hide-tag tg-btns">x &nbsp;&nbsp;Usertitle</button>
+      <button type="button" class="btn btn-default comments-tag hide-tag tg-btns">x &nbsp;&nbsp;Comments</button>
+      <button type="button" class="btn btn-default topics-tag hide-tag tg-btns">x &nbsp;&nbsp;Topics</button>
+      <button type="button" class="btn btn-default login-tag hide-tag tg-btns">x &nbsp;&nbsp;Login</button>
+       <a href="#" class="cancel clear">Clear selection</a>
+        </div> <!--/.col-xs-12-->
+        
+        <div class="col-xs-12 col-sm-4 cols pull-right">
+          <a href="#" class="grey">First</a>&nbsp;|&nbsp;
+          <a href="#" class="grey">&laquo;</a>&nbsp;|&nbsp;
+          <span>Page &nbsp;<button type="button" class="btn btn-default">1</button>&nbsp; of 12</span>&nbsp;|&nbsp;
+          <a href="#">&raquo;</a>&nbsp;|&nbsp;
+          <a href="#">Last</a>
+          <button class="btn btn-default btn-grey-1" type="button">10 Rows &nbsp;<span class="caret"></span></button>
+        </div> <!--/.col-xs-12-->
+      </div> <!--/.row-->
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 table-responsive over-table">
+          <table class="table table-bordered margin-bot-0">
+            <thead>
+              <tr class="active">
+                  <td class="tbl-r-m all-usernames"><input type="checkbox"> &nbsp;Username<span class="caret"></span></td>
+                    <td class="tbl-r usertitle-r">Usertitle</td>
+                    <td class="tbl-r comments-r">Comments</td>
+                    <td class="tbl-r deleted-comments-r">Deleted comments</td>
+                    <td class="tbl-r deleted-topics-r">Deleted topics</td>
+                    <td class="tbl-r questions-r">Questions solved</td>
+                    <td class="tbl-r topics-r">Topics</td>
+                    <td class="tbl-r usergroup-r">Usergroup</td>
+                    <td class="tbl-r secondary-r">Secondary usergroup</td>
+                    <td class="tbl-r registration-date-r">Registration date</td>
+                    <td class="tbl-r last-login-r">Last login</td>
+                    <td class="tbl-r logins-r">Logins</td>
+                    <td class="tbl-r last-comment-r">Last comment</td>
+                    <td class="tbl-r email-r">Email</td>
+                    <td class="tbl-r sso-r">SSO-ID</td>
+                    <td class="tbl-r ip-r">IP-adress</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/amber.jpg" /></a>
+                        <a href="#" class="black">&nbsp;Amber H.</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mrs</td>
+                    <td class="tbl-r  comments-r">64</td>
+                    <td class="tbl-r  deleted-comments-r">0</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">43</td>
+                    <td class="tbl-r topics-r">9</td>
+                    <td class="tbl-r usergroup-r">Registered user</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">19-mar-12 12:00</td>
+                    <td class="tbl-r last-login-r">16-aug-12 12:11</td>
+                    <td class="tbl-r logins-r">31</td>
+                    <td class="tbl-r last-comment-r">16-aug-12 16:10</td>
+                    <td class="tbl-r email-r">amber@gmail.com</td>
+                    <td class="tbl-r sso-r">798</td>
+                    <td class="tbl-r ip-r">192.168.0.1</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox" class="back-blue-2">
+                        <a href="#">&nbsp;<img src="images/bart.jpg" /></a>
+                        <a href="#" class="black">&nbsp;Bart Pineapple</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mr</td>
+                    <td class="tbl-r comments-r">37</td>
+                    <td class="tbl-r deleted-comments-r">0</td>
+                    <td class="tbl-r deleted-topics-r">1</td>
+                    <td class="tbl-r questions-r">32</td>
+                    <td class="tbl-r topics-r">-</td>
+                    <td class="tbl-r usergroup-r">Registered user</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">19-may-11 13:57</td>
+                    <td class="tbl-r last-login-r">15-may-12 17:34</td>
+                    <td class="tbl-r logins-r">20</td>
+                    <td class="tbl-r last-comment-r">14-may-12 20:01</td>
+                    <td class="tbl-r email-r">bart@gmail.com</td>
+                    <td class="tbl-r sso-r">875</td>
+                    <td class="tbl-r ip-r">192.168.0.2</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/caitlyn.jpg" /></a>
+                        <a href="#" class="black">&nbsp;Caitlyn Appleseed</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mrs</td>
+                    <td class="tbl-r comments-r">189</td>
+                    <td class="tbl-r deleted-comments-r">2</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">98</td>
+                    <td class="tbl-r topics-r">13</td>
+                    <td class="tbl-r usergroup-r">Registered user</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">13-aug-12 22:09</td>
+                    <td class="tbl-r last-login-r">13-aug-12 22:10</td>
+                    <td class="tbl-r logins-r">50</td>
+                    <td class="tbl-r last-comment-r">13-aug-12 23:50</td>
+                    <td class="tbl-r email-r">cait@gmail.com</td>
+                    <td class="tbl-r sso-r">645</td>
+                    <td class="tbl-r ip-r">192.168.0.3</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/carmen.jpg" /></a>
+                        <a href="#" class="black">&nbsp;Carmen Candy</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mrs</td>
+                    <td class="tbl-r comments-r">411</td>
+                    <td class="tbl-r deleted-comments-r">2</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">287</td>
+                    <td class="tbl-r topics-r">22</td>
+                    <td class="tbl-r usergroup-r">Moderator</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">01-jan-11 11:21</td>
+                    <td class="tbl-r last-login-r">15-aug-12 17:17</td>
+                    <td class="tbl-r logins-r">13</td>
+                    <td class="tbl-r last-comment-r">15-aug-12 18:13</td>
+                    <td class="tbl-r email-r">carmen@gmail.com</td>
+                    <td class="tbl-r sso-r">5342</td>
+                    <td class="tbl-r ip-r">192.168.0.4</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/dolf.jpg" /></a>
+                        <a href="#" class="black">&nbsp;Dolf Dreamer</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mr</td>
+                    <td class="tbl-r comments-r">282</td>
+                    <td class="tbl-r deleted-comments-r">1</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">220</td>
+                    <td class="tbl-r topics-r">-</td>
+                    <td class="tbl-r usergroup-r">Super-user</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">18-jan-11 12:08</td>
+                    <td class="tbl-r last-login-r">16-aug-12 13:12</td>
+                    <td class="tbl-r logins-r">22</td>
+                    <td class="tbl-r last-comment-r">16-aug-12 14:22</td>
+                    <td class="tbl-r email-r">dolf@gmail.com</td>
+                    <td class="tbl-r sso-r">7562</td>
+                    <td class="tbl-r ip-r">192.168.0.5</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/edgar.jpg" /></a>
+                        <a href="#" class="black">&nbsp;Edgar Enders</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Dr</td>
+                    <td class="tbl-r comments-r">37</td>
+                    <td class="tbl-r deleted-comments-r">3</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">14</td>
+                    <td class="tbl-r topics-r">-</td>
+                    <td class="tbl-r usergroup-r">Registered user</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">12-dec-11 08:55</td>
+                    <td class="tbl-r last-login-r">05-apr-12 08:08</td>
+                    <td class="tbl-r logins-r">59</td>
+                    <td class="tbl-r last-comment-r">04-apr-12 23:59</td>
+                    <td class="tbl-r email-r">edgar@gmail.com</td>
+                    <td class="tbl-r sso-r">436</td>
+                    <td class="tbl-r ip-r">192.168.0.6</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/jane.jpg" /></a>
+                        <a href="#" class="black">&nbsp;Jane Blackswan</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mrs</td>
+                    <td class="tbl-r comments-r">189</td>
+                    <td class="tbl-r deleted-comments-r">0</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">102</td>
+                    <td class="tbl-r topics-r">13</td>
+                    <td class="tbl-r usergroup-r">Registered user</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">04-feb-12 14:34</td>
+                    <td class="tbl-r last-login-r">16-aug-12 12:11</td>
+                    <td class="tbl-r logins-r">73</td>
+                    <td class="tbl-r last-comment-r">14-aug-12 07:33</td>
+                    <td class="tbl-r email-r">jane@gmail.com</td>
+                    <td class="tbl-r sso-r">763</td>
+                    <td class="tbl-r ip-r">192.168.0.7</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/jennifer.jpg" /></a>
+                        <a href="#" class="black">&nbsp;Jennifer Appleseed</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mrs</td>
+                    <td class="tbl-r comments-r">75</td>
+                    <td class="tbl-r deleted-comments-r">0</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">67</td>
+                    <td class="tbl-r topics-r">2</td>
+                    <td class="tbl-r usergroup-r">Moderator</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">16-mar-12 18:12</td>
+                    <td class="tbl-r last-login-r">15-may-12 17:34</td>
+                    <td class="tbl-r logins-r">10</td>
+                    <td class="tbl-r last-comment-r">16-ago-12 16:10</td>
+                    <td class="tbl-r email-r">jennifer@gmail.com</td>
+                    <td class="tbl-r sso-r">6431</td>
+                    <td class="tbl-r ip-r">192.168.0.8</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/john.jpg" /></a>
+                        <a href="#" class="black">&nbsp;John Doe</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mr</td>
+                    <td class="tbl-r comments-r">111</td>
+                    <td class="tbl-r deleted-comments-r">0</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">95</td>
+                    <td class="tbl-r topics-r">-</td>
+                    <td class="tbl-r usergroup-r">Registered user</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">30-jan-12 21:00</td>
+                    <td class="tbl-r last-login-r">13-aug-12 22:10</td>
+                    <td class="tbl-r logins-r">50</td>
+                    <td class="tbl-r last-comment-r">13-aug-12 23:50</td>
+                    <td class="tbl-r email-r">john@gmail.com</td>
+                    <td class="tbl-r sso-r">754</td>
+                    <td class="tbl-r ip-r">192.168.0.9</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+                <tr>
+                  <td>
+                      <input type="checkbox">
+                        <a href="#">&nbsp;<img src="images/foe.jpg" /></a>
+                        <a href="#" class="black">&nbsp;John Foe</a>
+                        <a href="#" class="pull-right"><img src="images/open.png" /></a>
+                    </td>
+                    <td class="tbl-r usertitle-r">Mr</td>
+                    <td class="tbl-r comments-r">189</td>
+                    <td class="tbl-r deleted-comments-r">2</td>
+                    <td class="tbl-r deleted-topics-r">0</td>
+                    <td class="tbl-r questions-r">102</td>
+                    <td class="tbl-r topics-r">3</td>
+                    <td class="tbl-r usergroup-r">Super-user</td>
+                    <td class="tbl-r secondary-r">Sec</td>
+                    <td class="tbl-r registration-date-r">07-may-12 04:14</td>
+                    <td class="tbl-r last-login-r">05-apr-12 08:08</td>
+                    <td class="tbl-r logins-r">201</td>
+                    <td class="tbl-r last-comment-r">14-may-12 20:01</td>
+                    <td class="tbl-r email-r">foe@gmail.com</td>
+                    <td class="tbl-r sso-r">6532</td>
+                    <td class="tbl-r ip-r">192.168.0.0</td>
+                    <td class="tbl-r etc-r">etc...</td>
+                </tr>
+            </tbody>
+          </table>
+        </div> <!--/.col-xs-12-->
+      </div>
+    </div><!--.container-->
+    <div class="container">
+      <div class="row extra">
+        <div class="col-xs-12 col-md-2  extra-info">
+          
+                <form role="form">
+                  <fieldset>
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>Change usergroup</option>
+                        <option>Usergroup 1</option>
+                        <option>Usergroup 2</option>
+                        <option>Usergroup 3</option>
+                      </select>
+                    </div> <!--/.form-group-->
+                  </fieldset>
+                </form>
+              </div>
+              <div class="col-xs-12 col-md-2  extra-info">
+             
+                <form role="form">
+                  <fieldset>
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>Add secundary us...</option>
+                        <option>Usergroup 1</option>
+                        <option>Usergroup 2</option>
+                        <option>Usergroup 3</option>
+                      </select>
+                    </div> <!--/.form-group-->
+                  </fieldset>
+                </form>
+              </div>
+             <div class="col-xs-12 col-md-2  extra-info">
+                <form role="form">
+                  <fieldset>
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>Permissions</option>
+                        <option>permission 1</option>
+                        <option>permission 2</option>
+                        <option>permission 3</option>
+                      </select>
+                    </div> <!--/.form-group-->
+                  </fieldset>
+                </form>
+              </div>
+               <div class="col-xs-12 col-md-2  extra-info">
+             
+                <button type="button" class="btn btn-default btn-grey-1">Apply</button>
+              </div>
+            
+         
+          <div class="col-xs-12 col-md-3 export pull-right">
+            <a type="button" class="btn btn-default">
+              <img src="images/wait.png" alt="loading" />72%</a>
+              <button type="button" class="btn btn-default btn-grey-1 pull-right">Export to excel</button>
+            </div> <!--/.col-md-3-->
+          </div>
+ </div>
+        </div>
+
+      </div><!--/.main-container-->
+
+
+
+    <script type="text/javascript">
+    $('.datepicker').datepicker();
+    </script>
+  </body>
+  </html>
